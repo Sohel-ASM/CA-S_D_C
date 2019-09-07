@@ -26,3 +26,7 @@ const getSleepHours = (day) => {
 };
 const getActualSleepHours = () =>
     getSleepHours('monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday') + getSleepHours('Sunday');
+const getIdealSleepHours = () => {
+    let idealHours = 8;
+    return idealHours * 7;
+};
