@@ -24,3 +24,5 @@ const getSleepHours = (day) => {
             break;
     }
 };
+const getActualSleepHours = () =>
+    getSleepHours('monday') + getSleepHours('Tuesday') + getSleepHours('Wednesday') + getSleepHours('Thursday') + getSleepHours('Friday') + getSleepHours('Saturday') + getSleepHours('Sunday');
